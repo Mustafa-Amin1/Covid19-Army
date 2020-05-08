@@ -68,6 +68,7 @@ header video {
     width: 100%;
     height: 80%;
     object-position: right;
+    margin-top: 5rem;
 }
 header .hero__header{
     position: absolute;
@@ -113,6 +114,7 @@ section.protect a{
 }
 
 /* End protect section style */
+
 /* Start fight section style */
 section.fight{
     width: 100%;
@@ -170,6 +172,7 @@ section.fight a{
     }
 }
 /* End fight section style */
+
 /* Start records style*/
 #records{
 
@@ -206,15 +209,14 @@ section.fight a{
     color: red;
 }
 /* End records style*/
+
 /* Start  News style*/
 section.news{
    background-color: #E6E6E6;
    height:60vh;
 }
-section.news img{
-    /* background-color: red; */
-    width: 100%;
-    height: 100%;
+section.news {
+
    
 }
 
