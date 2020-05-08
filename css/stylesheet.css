@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+}
+body{
+position: relative;
+background-image: url('../images/bg.png');
+background-repeat: no-repeat;
+background-position: left ;
+background-size: cover;
+background-attachment: fixed;
+}
+
+:root{
+    --main-color:red;
+    --second-color:#031444;
+    --button-backgrond-color:#17A2B8;
+    /* font-size: 10px; */
+}
+.main-btn{
+    background-color: var(--button-backgrond-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    padding: .8rem;
+}
+.main-btn:hover{
+    background-color: lightskyblue;
+    color: var(--second-color);
+}
+
+/* Start header style */
+.navbar{
+    background-color: #17A2B8;
+    /* position: sticky;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0; */
+    font-weight: bold;
+
+}
+.navbar .navbar-brand{
+    font-size: 2rem;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+
+}
+.navbar-collapse ul li a{
+    font-size: 1.2rem;
+    color: white;
+}
+nav a{
+    color: white;
+}
+.navbar-light{
+    color: white !important;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--second-color);
+    position: relative;
+    margin-bottom: 8rem;
+}
+header video {
+    width: 100%;
+    height: 80%;
+    object-position: right;
+}
+header .hero__header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    color: white;
+}
+header .hero__header h1{
+    font-size: 3.5rem;
+}
+header .hero__header .hero__header-content--btn{
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/* End header style */
+
+/* Start protect section style */
+section.protect{
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+}
+section.protect .protect__content-info{
+    padding: 1rem 0;
+}
+section.protect .protect__content-info ul li{
+   
+}
+section.protect a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+/* End protect section style */
+/* Start fight section style */
+section.fight{
+    width: 100%;
+    margin-bottom: 8rem;
+}
+section.fight .fight__content-info{
+    padding: 1rem 0;
+    
+}
+.card-header:first-child {  
+    overflow: hidden;
+}
+section.fight a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+@media (max-width: 768px) {
+    section.fight .container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    section.fight .container .fight__content-info {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 2;
+      -webkit-order: 2;
+      order: 2;
+    }
+    section.fight .container .fight__content-img {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+    }
+    header video {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: none;
+    }
+}
+/* End fight section style */
+/* Start records style*/
+#records{
+
+   background-color:#87cefae6;
+    color: white;
+    margin-bottom: 10rem;
+    padding: 2rem 0;
+    
+}
+#records .card-icon{
+    height: 6.5rem;
+    width: 6.5rem;
+}
+#records .card-icon i{
+    font-size: 2.5rem;
+    margin: 2rem auto;
+}
+#records .card-body .card-title{
+    color: var(--second-color);
+}
+#records .card-body .card-text{
+    font-size: 1.1rem;
+    opacity: .9;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#records .card-body .cases{
+    color: black;
+}
+#records .card-body .recovered{
+    color: green;
+}
+#records .card-body .deaths{
+    color: red;
+}
+/* End records style*/
+/* Start  News style*/
+section.news{
+   background-color: #E6E6E6;
+   height:60vh;
+}
+section.news img{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* End  News style*/
+/*==================== Start About ================*/
+section.about{
+    padding-top: 70px;
+    
+    height: auto;
+    background-color: #F6F5F1;
+    
+}
+section.about h3{
+    color: #2c3033;
+    font-family: "Cardo", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+section.about p,li,a{
+    color: #555555;
+    font-size: 15px;
+}
+section.about ul{
+    list-style: none;
+    padding: 0px;
+}
+section.about ul li{
+    margin-bottom: 10px;
+}
+section.about a{
+text-decoration: none;
+    }
+section.about .about-email{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+section.about .about-email input{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    border-color: transparent;
+        box-shadow: 7px 9px 19px -8px;
+
+}
+section.about .input-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color:var(--button-backgrond-color);
+    height: 40px;
+    width: 20%;
+    text-align: center;
+    
+}
+section.about .input-icon a{
+        font-size: 20px;
+}
+section.about .input-icon a i {
+    padding: 10px;
+    color:white;
+}
+section.about .footer{
+    position: relative; /* for footer*/
+    height: 100px;
+    margin-top: 50px;
+}
+section.about .footer .footer-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 20px;
+}
+section.about .footer p{
+    margin: 20px;
+    font-size: 15px;
+}
+section.about .footer p span{
+    color: var(--button-backgrond-color);
+    font-family: 'Meie Script', cursive;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+section.about .footer p strong{
+    color:rgb(249, 112, 112);
+    font-size: 20px;
+}
+
+/*==================== End About ================*/
