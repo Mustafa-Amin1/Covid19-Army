@@ -33,12 +33,6 @@ body{
 /* Start header style */
 .navbar{
     background-color: var(--frames-background-color);
-    position: sticky;
-    z-index: 1000;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
     font-weight: bold;
 
 }
