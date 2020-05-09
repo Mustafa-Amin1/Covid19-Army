@@ -99,7 +99,7 @@ section.protect{
 
 }
 section.protect .protect__content-info{
-    /* padding: 1rem 0; */
+    padding: 1rem 0;
     position: relative;
     z-index: 15;
 }
@@ -121,7 +121,7 @@ section.fight{
     z-index: 1;
 }
 section.fight .fight__content-info{
-    /* padding: 1rem 0; */
+    padding: 1rem 0;
     
 }
 .card-header:first-child {  
