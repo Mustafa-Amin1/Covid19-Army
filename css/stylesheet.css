@@ -245,7 +245,6 @@ section.news .news__header .alarm{
         top: 80;
         bottom: 101px;
         right: 63px;
-
     }
   }
 section.news .news__header::after{
@@ -271,6 +270,9 @@ section.news .next{
         min-height: 21rem;
         overflow: hidden;
         position: relative;
+    }
+    section.news .card-text{
+        padding-bottom: 1rem;
     }
     section.news span.time{
         position: absolute;
