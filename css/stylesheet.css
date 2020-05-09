@@ -238,6 +238,16 @@ section.news .news__header .alarm{
     75%  {background-color:rgb(173, 2, 2,.7)}
     100% {background-color:rgb(173, 2, 2)}
   }
+  @media (max-width:769px){
+    section.news .news__header .alarm{
+        margin-left: .5rem;
+        position: absolute;
+        top: 80;
+        bottom: 101px;
+        right: 63px;
+
+    }
+  }
 section.news .news__header::after{
     display: inline-block;
     content: "";
