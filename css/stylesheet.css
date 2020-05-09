@@ -58,7 +58,7 @@ nav a{
 
 header{
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: var(--second-color);
     position: relative;
     margin-bottom: 8rem;
@@ -99,13 +99,11 @@ section.protect{
 
 }
 section.protect .protect__content-info{
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     position: relative;
     z-index: 15;
 }
-section.protect .protect__content-info ul li{
-   
-}
+
 section.protect a{
     text-decoration: none;
     font-weight: bold;
@@ -123,7 +121,7 @@ section.fight{
     z-index: 1;
 }
 section.fight .fight__content-info{
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     
 }
 .card-header:first-child {  
