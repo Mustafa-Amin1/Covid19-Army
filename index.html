@@ -205,6 +205,10 @@
   <!-- start records section  -->
   <section id="records">
     <div class="container">
+      <div  class="m-auto w-75 d-none d-md-block">
+        <canvas id="canvas" ></canvas>
+        <progress id="animationProgress" class="mb-5" max="1" value="0" style="width: 100%"></progress>
+      </div>
       <div class="row justify-content-around">
         <div class="card col-lg-3 text-center border-0 p-0 bg-transparent">
           <div class="card-body p-0">
@@ -436,35 +440,9 @@
     </div>
   </section>
   <!--        End About  -->
-
-
-
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
+<script src="./js/main-chart.js"></script>
   <script src="js/wow.js"></script>
-  <script>
-  
-  wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };
-  
-  </script>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>

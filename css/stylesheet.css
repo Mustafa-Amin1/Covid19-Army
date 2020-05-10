@@ -180,6 +180,15 @@ section.fight a{
     padding: 2rem 0;
     
 }
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#records #doughnut-chart{
+    width:800px !important;
+    height:450px !important;
+}
 #records .card-icon{
     height: 6.5rem;
     width: 6.5rem;
