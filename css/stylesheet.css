@@ -252,11 +252,11 @@ section.news .prev , section.news .next {
         right: -45px;
     }
     section.news .next {
-        top: -45px !important;
+        top: -75px !important;
         left: 18% !important;
         }
     section.news .prev {
-        top: -45px !important;
+        top: -75px !important;
         left: 5% !important;
     }
     section.news .carousel-inner{
