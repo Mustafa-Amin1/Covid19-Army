@@ -1,5 +1,37 @@
-// $(document).ready(function() {
-//     $('.carousel').carousel({
-//       interval: 6000
-//     })
-//   });
+// numbers animation
+$(function () {
+    var fx = function fx() {
+    $(".animated__number").each(function (i, el) {
+        var data = parseInt(this.dataset.n, 10);
+        var props = {
+            "from": {
+                "count": 0
+            },
+                "to": { 
+                "count": data
+            }
+        };
+        $(props.from).animate(props.to, {
+            duration: 4500 * 1,
+            step: function (now, fx) {
+                $(el).text(Math.ceil(now));
+            },
+            complete:function() {
+                if (el.dataset.sym !== undefined) {
+                  el.textContent = el.textContent.concat(el.dataset.sym)
+                }
+            }
+        });
+    });
+    };
+    
+    var reset = function reset() {
+        //console.log($(this).scrollTop())
+        if ($(this).scrollTop() > 1500) {
+            $(this).off("scroll");
+          fx()
+        }
+    };
+    
+    $(window).on("scroll", reset);
+});

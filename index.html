@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/stylesheet.css">
   <title>COVID19-ARMY</title>
@@ -50,7 +51,7 @@
     <div class="container-fluid pr-0 pl-0 text-center">
       <div class="hero__header row align-items-center no-gutters">
         <div class="hero__header-content col-md-6 col-sm-12">
-          <h1>COVID19-ARMY CAMP</h1>
+          <h1 class="wow bounceIn">COVID19-ARMY CAMP</h1>
           <div class="container my-3">
             <div class="row justify-content-center">
               <a href="#protect" class=" hero__header-content--btn main-btn col-3 mr-3 ">How to Protect</a>
@@ -71,12 +72,12 @@
   <section id="protect" class="protect">
     <div class="container">
       <div class="row">
-        <div class="protect__content-img col-md-6 col-sm-12">
+        <div class="protect__content-img col-md-6 col-sm-12 wow fadeInLeft">
           <figure class=" figure ">
             <img src="./images/main page/protect.jpg" class="img-fluid">
           </figure>
         </div>
-        <div class="protect__content-info col-sm-12 col-md-5 align-self-start">
+        <div class="protect__content-info col-sm-12 col-md-5 align-self-start wow fadeInRight">
           <h2 class="mb-3">What is Coronavirus and how can I protect myself?</h2>
           <div class="accordion protect__content-tips" id="accordionExample">
             <div class="card">
@@ -127,7 +128,7 @@
   <section id="fight" class="fight">
     <div class="container">
       <div class="row">
-        <div class="fight__content-info col-sm-12 col-md-5 align-self-start ">
+        <div class="fight__content-info col-sm-12 col-md-5 align-self-start wow fadeInRight">
           <h2 class="mb-3">How can we fight CoronaVirus?</h2>
           <div class="accordion protect__content-tips" id="accordionExample">
             <div class="card">
@@ -193,7 +194,7 @@
             <a class="main-btn " href="#">More details</a>
           </div>
         </div>
-        <div class="fight__content-img col-md-6 col-sm-12">
+        <div class="fight__content-img col-md-6 col-sm-12 wow fadeInLeft">
           <figure class=" figure ">
             <img src="./images/main page/fight.jpg" class="img-fluid">
           </figure>
@@ -207,22 +208,22 @@
       <div class="row justify-content-around">
         <div class="card col-lg-3 text-center border-0 p-0 bg-transparent">
           <div class="card-body p-0">
-            <h5 class="card-title h2  font-weight-bold">Coronavirus Cases:</h5>
-            <p class="card-text cases p-3 ">3,916,338</p>
+            <h5 class="card-title h2  font-weight-bold" >Coronavirus Cases:</h5>
+            <p class="card-text cases p-3 animated__number wow fadeInUp " data-wow-delay=".5s"  data-n="3916338">3,916,338</p>
 
           </div>
         </div>
         <div class="card col-lg-3 text-center border-0 p-0 bg-transparent">
           <div class="card-body p-0">
             <h5 class="card-title h2  font-weight-bold">Recovered:</h5>
-            <p class="card-text recovered p-3">1,343,054</p>
+            <p class="card-text recovered animated__number p-3 wow fadeInUp" data-wow-delay=".5s" data-n="1343054">1,343,054</p>
 
           </div>
         </div>
         <div class="card col-lg-3 text-center border-0 p-0 bg-transparent">
           <div class="card-body p-0">
             <h5 class="card-title h2  font-weight-bold">Deaths</h5>
-            <p class="card-text deaths p-3">270,711</p>
+            <p class="card-text deaths p-3 animated__number wow fadeInUp" data-wow-delay=".5s" data-n="270711">270,711</p>
           </div>
         </div>
       </div>
@@ -232,7 +233,7 @@
 
   <!-- Start News section  -->
   <section id="news" class="news py-5">
-    <div class="news__header mb-5 text-center justify-content-center align-items-center">
+    <div class="news__header mb-5 text-center justify-content-center align-items-center wow flipInX">
       <h2 class="col-12">CoronaVirus <span class="alarm__dir">News <span class="alarm col-md-3 d-md-inline-block d-block"></span></span>
       </h2>
     </div>
@@ -444,8 +445,26 @@
 
 
 
-
-
+  <script src="js/wow.js"></script>
+  <script>
+  
+  wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  
+  </script>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>

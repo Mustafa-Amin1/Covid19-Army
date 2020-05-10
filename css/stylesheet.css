@@ -9,7 +9,6 @@ body{
     background-position: left ;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 :root{
@@ -19,6 +18,7 @@ body{
     --frames-background-color:#17A2B8;
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow: scroll;
 }
 .main-btn{
     background-color: var(--button-backgrond-color);
