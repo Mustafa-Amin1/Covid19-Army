@@ -9,6 +9,7 @@ body{
     background-position: left ;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 :root{
@@ -17,6 +18,7 @@ body{
     --button-backgrond-color:#17A2B8;
     --frames-background-color:#17A2B8;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 .main-btn{
     background-color: var(--button-backgrond-color);
@@ -257,6 +259,10 @@ section.news .prev , section.news .next {
         top: -45px !important;
         left: 5% !important;
     }
+    section.news .carousel-inner{
+        margin-bottom: 5rem!important;
+    }
+
   }
 section.news .news__header::after{
     display: inline-block;
