@@ -16,7 +16,7 @@ body{
     --second-color:#031444;
     --button-backgrond-color:#17A2B8;
     --frames-background-color:#17A2B8;
-    /* font-size: 10px; */
+    font-size: 16px;
 }
 .main-btn{
     background-color: var(--button-backgrond-color);
@@ -67,7 +67,6 @@ header video {
     width: 100%;
     height: 80%;
     object-position: right;
-    margin-top: 5rem;
 }
 header .hero__header{
     position: absolute;
@@ -214,9 +213,11 @@ section.news{
    position: relative;
 }
 section.news .news__header h2 {
-    position: relative;
    font-weight: bold;
    font-size: 3rem;
+}
+section.news .news__header h2 .alarm__dir{
+    position: relative;
 }
 section.news .news__header .alarm{
     margin-left:.5rem;
@@ -231,6 +232,12 @@ section.news .news__header .alarm{
     animation-duration: .7s;
     animation-iteration-count: infinite;
 }
+section.news .prev , section.news .next {
+    padding: 10px 12px;
+    background-color: var(--button-backgrond-color);
+    border-radius: 50%;
+    margin: 2rem auto;
+}
 @keyframes alarm {
     0%   {background-color:rgb(173, 2, 2); }
     25%  {background-color:rgba(2, 13, 173, 0.7) }
@@ -240,11 +247,15 @@ section.news .news__header .alarm{
   }
   @media (max-width:769px){
     section.news .news__header .alarm{
-        margin-left: .5rem;
-        position: absolute;
-        top: 80;
-        bottom: 101px;
-        right: 63px;
+        right: -45px;
+    }
+    section.news .next {
+        top: -45px !important;
+        left: 18% !important;
+        }
+    section.news .prev {
+        top: -45px !important;
+        left: 5% !important;
     }
   }
 section.news .news__header::after{
@@ -257,14 +268,16 @@ section.news .news__header::after{
 section.news .prev{
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 2%;
     z-index: 1000;
+    color: white;
 }
 section.news .next{
     position: absolute;
     top: 50%;
-    right: 5%;
+    left: 96%;
     z-index: 1000;
+    color: white;
     }
     section.news .card {
         min-height: 21rem;
