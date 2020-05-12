@@ -1,3 +1,13 @@
+window.onload = function(){
+setTimeout(() => {
+  ready() 
+    }, 1000);
+};
+function ready() {
+    document.getElementsByClassName('body-layer')[0]
+    document.getElementsByClassName('body-layer')[0].style.display="none"
+  
+  }
 //======================== start numbers counter animation=========================
 $(function () {
     var fx = function fx() {
