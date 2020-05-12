@@ -1,7 +1,7 @@
 window.onload = function(){
 setTimeout(() => {
   ready() 
-    }, 1000);
+    }, 5000);
 };
 function ready() {
     document.getElementsByClassName('body-layer')[0]
