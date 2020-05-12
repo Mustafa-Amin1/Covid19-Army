@@ -1,6 +1,29 @@
 *{
     box-sizing: border-box;
 }
+.body-layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    background-color:white;
+    z-index: 500;
+    display: block;
+    animation: display 5s  ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes display{
+    0%{
+        /* background-color: rgb(255, 255, 255); */
+        opacity: 1;
+    }
+    100%{
+        /* background-color: rgb(255, 255, 255,0); */
+        opacity: 0;
+
+      }
+}
 .drow{
     /* border: 2px solid black; */
     height: 300px;

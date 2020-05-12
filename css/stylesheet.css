@@ -10,16 +10,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.body-layer{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 50;
-    background-color:white;
-    z-index: 500;
-    display: block;
-}
+
 
 :root{
     --main-color:red;
