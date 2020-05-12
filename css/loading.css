@@ -15,12 +15,10 @@
 }
 @keyframes display{
     0%{
-        /* background-color: rgb(255, 255, 255); */
-        opacity: 1;
+        background-color: rgb(255, 255, 255);
     }
     100%{
-        /* background-color: rgb(255, 255, 255,0); */
-        opacity: 0;
+        background-color: rgb(255, 255, 255,0);
 
       }
 }
